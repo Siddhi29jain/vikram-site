@@ -490,6 +490,34 @@ main {
   font-weight: 800;
 }
 
+.milestone-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.milestone-list p {
+  position: relative;
+  padding: 12px 14px 12px 38px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.milestone-list p::before {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  content: "";
+  background: var(--copper-hot);
+  box-shadow: 0 0 18px rgba(255, 159, 69, 0.45);
+}
+
 .outcomes-card {
   position: relative;
   padding: clamp(30px, 6vw, 70px);
